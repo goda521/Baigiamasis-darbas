@@ -1,0 +1,281 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/*font-family: 'Crimson Text', serif;*/
+/*font-family: 'Didact Gothic', sans-serif*/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5px;
+    color: #B89A96;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(232, 214, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+ul {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+li {
+    width: 120px;
+    height: 60px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-shadow: 0px 0px 2px color:white;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 60px;
+    font-family: 'Crimson Text', serif;
+    text-shadow: 2px 2px #272934;
+    color: #7E5B57;
+    padding-top: 150px;
+}
+
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 50px;
+    margin: 20px;
+    color: #7E5B57;
+    text-shadow: 2px 2px #272934;
+    padding-top: 10px;
+}
+
+h3 {
+    font-family: 'Crimson Text', serif;
+    font-size: 50px;
+    margin: 20px;
+    text-shadow: 2px 2px #272934;
+    color: #7E5B57;
+    padding-top: 10px;
+}
+
+section {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+
+}
+
+.apie {
+    width: 900px;
+    position: relative;
+    left: 0;
+
+}
+
+.gallery{
+    display:flex;
+    flex-wrap;
+    justify-content:space-around;
+    height:auto;
+    padding:20px;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+    position: relative;
+    margin:20px;
+}
+
+.face {
+    outline: 2px dashed blue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: 2s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.front {
+    background-color: palevioletred;
+}
+
+.card:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.back {
+    background-color: skyblue;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.face h2 {
+    font-size: 30px;
+    transform: perspective(500px) translateZ(50px);
+    text-align:center;
+}
+
+.card span{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0
+}
+
+.facebook {
+    text-align: center;
+}
+
+iframe {
+    margin: 20px;
+    box-shadow: 0px 0px 5px grey;
+    padding: 5px;
+}
+
+.foto1{
+    background-image:url(6.jpg);
+    
+}
+
+.foto2{
+    background-image:url(3.jpg);
+}
+
+.foto3{
+    background-image:url(2.jpg);
+}
+
+.foto4{
+    background-image:url(4.jpg);
+}
+
+.foto5{
+    background-image:url(5.jpg);
+}
+
+body {
+    background-color: #8F797B;
+}
+
+.spalva {
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: 'Crimson Text', serif;
+    font-size: 22px;
+}
+
+.photo {
+    width: 800px;
+    height: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer{
+    text-align:center;
+    width:100%;
+    height:100px;
+    padding-top:50px;
+}
+
+@media screen and (max-width:700px){
+    nav{
+        height:auto;
+    }
+    iframe{
+        width:80%;
+    }
+    
+}
+
+
